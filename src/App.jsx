@@ -37,6 +37,12 @@ function App() {
     }
   };
 
+  const random = () => {
+    const randomIndex = Math.floor(Math.random() * flashCards.cards.length);
+    setIndex(randomIndex);
+    setFlipped(false);
+  };
+
   const prev = () => {
     if (index > 0) {
       setIndex(index - 1);
@@ -63,6 +69,7 @@ function App() {
       <div className="buttons">
         <button onClick={prev} disabled={index === 0}>Prev</button>
         <button onClick={next} disabled={index === flashCards.cards.length - 1}>Next</button>
+        <button onClick={random}>Random</button>
       </div>
 
       </div>

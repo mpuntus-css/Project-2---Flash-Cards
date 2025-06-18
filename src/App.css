@@ -79,3 +79,6 @@ button {
   cursor: pointer;
 }
 
+button:disabled {
+  background-color: grey;
+}

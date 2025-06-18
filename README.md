@@ -17,16 +17,16 @@ The following **required** functionality is completed:
   - [X] A list of card pairs is created
   - [X] The total number of cards in the set is displayed 
   - [X] Card set is represented as a list of card pairs (an array of dictionaries where each dictionary contains the question and answer is perfectly fine)
-- [ ] **A single card at a time is displayed**
-  - [ ] Only one half of the information pair is displayed at a time
-- [ ] **Clicking on the card flips the card over, showing the corresponding component of the information pair**
-  - [ ] Clicking on a card flips it over, showing the back with corresponding information 
-  - [ ] Clicking on a flipped card again flips it back, showing the front
-- [ ] **Clicking on the next button displays a random new card**
+- [X] **A single card at a time is displayed**
+  - [X] Only one half of the information pair is displayed at a time
+- [X] **Clicking on the card flips the card over, showing the corresponding component of the information pair**
+  - [X] Clicking on a card flips it over, showing the back with corresponding information 
+  - [X] Clicking on a flipped card again flips it back, showing the front
+- [X] **Clicking on the next button displays a random new card**
 
 The following **optional** features are implemented:
 
-- [] Cards contain images in addition to or in place of text
+- [ ] Cards contain images in addition to or in place of text
   - [ ] Some or all cards have images in place of or in addition to text
 - [ ] Cards have different visual styles such as color based on their category
   - Example categories you can use:
@@ -41,7 +41,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Alt text](src/assets/Project2GIF.gif)
+
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LICEcap  
@@ -53,6 +54,12 @@ GIF created with LICEcap
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+Instead of having a single “Next” button that displays a random card, I decided to implement three buttons:
+    1. Prev – shows the previous card in the list
+    2. Next – shows the next card in the dictionary (sequentially)
+    3. Random – shows a random card pair from the dictionary
+This gives users more control over how they want to navigate through the flashcards. 
 
 ## License
 
